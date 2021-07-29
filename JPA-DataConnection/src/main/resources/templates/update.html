@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+function submit(){
+	var id=document.getElementById("id").value;
+	var method=document.getElementById("method").value;
+	var data=document.getElementById("data").value;
+	var url="/"+id+"/"+method+"/"+data;
+
+	var xhttp=new XMLHttpRequest();
+	xhttp.onreadystatechange=function()
+	{
+		if(this.readyState==4 && this.status==200)
+			{
+				//Perform whatever action you want with the data available as 
+				this.responseText;
+			}
+	};
+	xhttp.open("put","http://localhost:8072/Student/update/"+url,true);
+	xhttp.send();
+	console.log(url);
+}
+</script>
+</head>
+<body>
+<p align="center">ID:<input type="number" id="id" name="id"/></p>
+<p align="center">choice:<input list="methods" id="method"/></p>
+<datalist id="methods">
+<option value="name">
+<option value="balance" >
+</datalist>
+<p align="center">Enter:<input type="text" id="data"/></p>
+<p align="center">Enter:<button onclick="submit()">submit</button></p>
+
+</body>
+</html>
