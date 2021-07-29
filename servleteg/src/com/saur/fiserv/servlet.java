@@ -22,6 +22,7 @@ public class servlet extends HttpServlet {
    public void doPost(HttpServletRequest req,HttpServletResponse res)
    {
 	   System.out.println("in the post metttttthod");
+	   puull from git
    }
 
 }
