@@ -16,12 +16,12 @@ public class servlet extends HttpServlet {
 		PrintWriter out=res.getWriter();
 		out.println("<h1>hello world</h1>");
 		
-		System.out.println("in the do get method");	
+		System.out.println("in the do get metttttttthod");	
 	}
 
    public void doPost(HttpServletRequest req,HttpServletResponse res)
    {
-	   System.out.println("in the post method");
+	   System.out.println("in the post metttttthod");
    }
 
 }
