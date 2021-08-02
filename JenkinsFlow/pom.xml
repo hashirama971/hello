@@ -5,7 +5,7 @@
   <artifactId>JenkinsFlow</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>JenkinsFlow Maven Webapp</name>
+  <name>JenkinsFlow</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
